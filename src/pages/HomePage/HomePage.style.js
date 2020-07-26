@@ -8,6 +8,30 @@ const HomePageStyle = makeStyles((theme) => {
             margin: "0",
             padding: "0",
         },
+        imgContainer: {
+            display: "flex",
+            justifyContent: "center",
+            margin: "40px auto",
+        },
+        image: {
+            minWidth: "50%",
+            height: "260px",
+            margin: "12px 12px",
+        },
+        btnPosition: {
+            display: "flex",
+            justifyContent: "center",
+        },
+        ourAddress: {
+            fontSize: "20px",
+            textAlign: "center",
+            margin: "10px",
+        },
+        contactUsTxt: {
+            fontWeight: "bold",
+            color: "#656060",
+            marginBottom: "10px",
+        },
     };
 });
 export default HomePageStyle;

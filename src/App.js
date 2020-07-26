@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import OurCustomersPage from "./pages/OurCustomersPage/OurCustomersPage";
 
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/services" component={ServicesPage} />
                     <Route path="/gallery" component={GalleryPage} />
                     <Route path="/contact" component={ContactPage} />
+                    <Route path="/ourCustomers" component={OurCustomersPage} />
                     <Route component={ErrorPage} />
                 </Switch>
             </div>
