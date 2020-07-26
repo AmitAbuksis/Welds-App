@@ -7,7 +7,7 @@ const ContactUsBtn = (props) => {
     const classes = useStyle();
     const { label, direction } = props;
     return (
-        <Link to={direction} className={classes.linkStyle}>
+        <Link to={direction ? direction : "/"} className={classes.linkStyle}>
             {label}
         </Link>
     );

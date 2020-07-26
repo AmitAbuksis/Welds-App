@@ -17,7 +17,9 @@ function App() {
         <Router>
             <div>
                 <Header />
-                <Navigation />
+                <div style={{ position: "sticky", top: "0" }}>
+                    <Navigation />
+                </div>
                 <Switch>
                     <Route path="/" component={HomePage} exact />
                     <Route path="/about" component={AboutPage} />
