@@ -8,7 +8,7 @@ import ContactUsBtn from "../../components/ContactUsButton/ContactUsBtn";
 import Footer from "../../components/Footer/Footer";
 
 const HomePage = (props) => {
-    const { onContactUsClick } = props;
+    const { onContactUsClick, history } = props;
     const classes = useStyle();
     return (
         <div className={classes.container}>

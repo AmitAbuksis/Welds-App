@@ -6,6 +6,7 @@ const HeaderStyle = makeStyles((theme) => {
             width: "100%",
             minHeight: "170px",
             backgroundColor: "#ffffff",
+            cursor: "pointer",
         },
         headerElements: {
             display: "flex",

@@ -1,18 +1,22 @@
 import React from "react";
 import useStyle from "./Header.style";
 
+import { useHistory } from "react-router-dom";
+
 import { Typography } from "@material-ui/core";
 
 const Header = (props) => {
+    const { headerTitle, headerSubTitle } = props;
+    const history = useHistory();
     const classes = useStyle();
     return (
         <div className={classes.headerContainer}>
-            <div className={classes.headerElements}>
-                <img className={classes.logoImage} alt="ריתוכי חוזה" />
+            <div className={classes.headerElements} onClick={() => history.push("/")}>
+                <img className={classes.logoImage} alt={`${headerTitle}`} />
                 <div>
-                    <Typography variant="h3">ריתוכי חוזה</Typography>
+                    <Typography variant="h3">{headerTitle}</Typography>
                     <Typography variant="h5" className={classes.headerSubTitle}>
-                        עבודות ריתוך מקצועיות
+                        {headerSubTitle}
                     </Typography>
                 </div>
             </div>

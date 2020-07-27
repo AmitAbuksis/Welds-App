@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom";
 
 import HomePage from "./pages/HomePage/HomePage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
@@ -16,7 +16,7 @@ function App() {
     return (
         <Router>
             <div>
-                <Header />
+                <Header headerTitle={"ריתוכי חוזה"} headerSubTitle={"ריתוך אירגון מקצועי"} />
                 <div style={{ position: "sticky", top: "0" }}>
                     <Navigation />
                 </div>
