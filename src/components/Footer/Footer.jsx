@@ -1,11 +1,14 @@
 import React from "react";
 import useStyle from "./Footer.style";
 
+import { useHistory } from "react-router-dom";
+
 import facebookIcon from "../../assets/images/facebook_icon.png";
 import instagramIcon from "../../assets/images/instagram_icon.jpg";
 
 const Header = (props) => {
     const { redirectToSocialMedia } = props;
+    const history = useHistory();
     const classes = useStyle();
     return (
         <div className={classes.footerContainer}>
@@ -18,7 +21,9 @@ const Header = (props) => {
                     <div className={classes.linkContent}>לינק 3</div>
                     <div className={classes.linkContent}>לינק 4</div>
                 </div>
-                <div className={classes.ourCustomerLink}>בין לקוחותינו</div>
+                <div className={classes.ourCustomerLink} onClick={() => history.push("/ourCustomers")}>
+                    בין לקוחותינו
+                </div>
             </div>
             <div className={classes.socialMediaIconsContainer}>
                 <div onClick={() => redirectToSocialMedia("facebook")}>
