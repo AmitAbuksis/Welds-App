@@ -15,6 +15,7 @@ const HeaderStyle = makeStyles((theme) => {
         logoImage: {
             width: "200px",
             height: "200px",
+            marginLeft: "70px",
         },
         headerSubTitle: {
             color: "#a2a2a2",

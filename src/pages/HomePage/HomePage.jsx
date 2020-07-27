@@ -5,7 +5,6 @@ import welderHome from "../../assets/images/welder-home.jpg";
 import { Typography } from "@material-ui/core";
 
 import ContactUsBtn from "../../components/ContactUsButton/ContactUsBtn";
-import Footer from "../../components/Footer/Footer";
 
 const HomePage = (props) => {
     const { onContactUsClick, history } = props;
@@ -68,7 +67,6 @@ const HomePage = (props) => {
             <div className={classes.btnPosition}>
                 <ContactUsBtn label={"הקליקו כדי ליצור איתנו קשר"} />
             </div>
-            <Footer />
         </div>
     );
 };

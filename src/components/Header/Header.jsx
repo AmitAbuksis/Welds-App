@@ -1,5 +1,6 @@
 import React from "react";
 import useStyle from "./Header.style";
+import headerImage from "../../assets/images/header-image.jpg";
 
 import { useHistory } from "react-router-dom";
 
@@ -12,7 +13,7 @@ const Header = (props) => {
     return (
         <div className={classes.headerContainer}>
             <div className={classes.headerElements} onClick={() => history.push("/")}>
-                <img className={classes.logoImage} alt={`${headerTitle}`} />
+                <img className={classes.logoImage} alt={`${headerTitle}`} src={headerImage} />
                 <div>
                     <Typography variant="h3">{headerTitle}</Typography>
                     <Typography variant="h5" className={classes.headerSubTitle}>

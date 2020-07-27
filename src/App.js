@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "./pages/HomePage/HomePage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
@@ -11,8 +11,16 @@ import OurCustomersPage from "./pages/OurCustomersPage/OurCustomersPage";
 
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
+    const redirectToSocialMedia = (variant) => {
+        if (variant === "facebook") {
+            return window.open("https://www.facebook.com/profile.php?id=1274526780");
+        } else if (variant === "instagram") {
+            return window.open("https://www.instagram.com");
+        }
+    };
     return (
         <Router>
             <div>
@@ -29,6 +37,7 @@ function App() {
                     <Route path="/ourCustomers" component={OurCustomersPage} />
                     <Route component={ErrorPage} />
                 </Switch>
+                <Footer redirectToSocialMedia={redirectToSocialMedia} />
             </div>
         </Router>
     );
