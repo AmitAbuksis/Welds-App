@@ -15,7 +15,7 @@ const AboutPage = (props) => {
             <div className={classes.ourCustomersBtn}>
                 <Button label={"בין לקוחותינו"} direction={"/ourCustomers"} />
             </div>
-            <Typography variant="h6">ריתוכי חוזה - ריתוכי אלומיניום ועוד</Typography>
+            <Typography variant="h5">ריתוכי חוזה - ריתוכי אלומיניום ועוד</Typography>
             <div className={classes.sectionText}>
                 <Typography variant="h6" className={classes.subTitle}>
                     כותרת משנה

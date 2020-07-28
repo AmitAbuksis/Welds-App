@@ -20,7 +20,7 @@ const GalleryPageStyle = makeStyles((theme) => {
             justifyContent: "center",
         },
         image: {
-            width: "20%",
+            width: "25%",
             height: "auto",
             margin: "10px",
             transition: "1s",
