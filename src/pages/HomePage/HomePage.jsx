@@ -7,7 +7,6 @@ import { Typography } from "@material-ui/core";
 import Button from "../../components/Button/Button";
 
 const HomePage = (props) => {
-    const { onContactUsClick, history } = props;
     const classes = useStyle();
     return (
         <div className={classes.container}>

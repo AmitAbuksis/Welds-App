@@ -15,14 +15,14 @@ const HomePageStyle = makeStyles((theme) => {
             margin: "40px auto",
         },
         image: {
-            minWidth: "70%",
+            minWidth: "50%",
             height: "400px",
             margin: "12px 12px",
-            ["@media screen and (max-width: 600px)"]: {
-                width: "100%",
-                height: "100%",
-                margin: "0",
-            },
+            // ["@media screen and (max-width: 600px)"]: {
+            //     width: "100%",
+            //     height: "100%",
+            //     margin: "0",
+            // },
         },
         btnPosition: {
             display: "flex",

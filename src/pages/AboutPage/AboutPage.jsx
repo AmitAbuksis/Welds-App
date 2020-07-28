@@ -8,7 +8,6 @@ import Button from "../../components/Button/Button";
 import { Typography } from "@material-ui/core";
 
 const AboutPage = (props) => {
-    const { history } = props;
     const classes = useStyle();
     return (
         <div className={classes.aboutPageContainer}>

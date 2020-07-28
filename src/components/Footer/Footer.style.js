@@ -10,15 +10,15 @@ const FooterStyle = makeStyles((theme) => {
             color: "white",
             display: "flex",
             justifyContent: "space-between",
-            ["@media screen and (max-width: 600px)"]: {
-                widht: "100%",
-                height: "100%",
-            },
+            // ["@media screen and (max-width: 600px)"]: {
+            //     widht: "100%",
+            //     height: "100%",
+            // },
         },
         linksContainer: {
-            ["@media screen and (min-width: 600px)"]: {
-                paddingRight: "40px",
-            },
+            // ["@media screen and (min-width: 600px)"]: {
+            //     paddingRight: "40px",
+            // },
         },
         linksSubContainer: {
             display: "flex",

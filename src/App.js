@@ -28,7 +28,7 @@ function App() {
     return (
         <Router>
             <div>
-                <Header headerTitle={"ריתוכי חוזה"} headerSubTitle={"ריתוך אירגון מקצועי"} />
+                <Header headerTitle={"ריתוכי חוזה"} headerSubTitle={"עבודות ריתוך מקצועיות"} />
                 <div style={{ position: "sticky", top: "0" }}>
                     <Navigation />
                 </div>
@@ -41,7 +41,7 @@ function App() {
                     <Route path="/ourCustomers" component={OurCustomersPage} />
                     <Route component={ErrorPage} />
                 </Switch>
-                <Tooltip title="דבר איתנו">
+                <Tooltip title="דבר איתנו בואצאפ.">
                     <div className={classes.whatsAppBox} onClick={() => window.open("https://wa.me/+972545512329")}>
                         <img src="https://img.icons8.com/color/100/000000/whatsapp.png" alt="whastAppIcon" className={classes.whastAppIcon} />
                     </div>
