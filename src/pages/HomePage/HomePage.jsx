@@ -4,7 +4,7 @@ import welderHome from "../../assets/images/welder-home.jpg";
 
 import { Typography } from "@material-ui/core";
 
-import ContactUsBtn from "../../components/ContactUsButton/ContactUsBtn";
+import Button from "../../components/Button/Button";
 
 const HomePage = (props) => {
     const { onContactUsClick, history } = props;
@@ -15,11 +15,11 @@ const HomePage = (props) => {
                 <img className={classes.image} src={welderHome} alt="welder" />
             </div>
             <div className={classes.btnPosition}>
-                <ContactUsBtn label={"הקליקו כדי ליצור איתנו קשר"} direction="/contact" />
+                <Button label={"הקליקו כדי ליצור איתנו קשר"} direction="/contact" />
             </div>
             <div className={classes.ourAddress}>כתובת להגעה - רחוב אהרונסון 12 ראשון לציון</div>
             <div className={classes.btnPosition}>
-                <ContactUsBtn label={"בין לקוחותינו"} direction="/ourCustomers" />
+                <Button label={"בין לקוחותינו"} direction="/ourCustomers" />
             </div>
             <div className={classes.textSection}>
                 <Typography variant="h5">עבודות ריתוך בלה בלה</Typography>
@@ -65,7 +65,7 @@ const HomePage = (props) => {
             </div>
             <div className={classes.contactUsTxt}>לפרטים ולהזמנות צרו עמנו קשר בטלפון או השאירו פרטים באתר ונחזור אליכם במהרה!</div>
             <div className={classes.btnPosition}>
-                <ContactUsBtn label={"הקליקו כדי ליצור איתנו קשר"} />
+                <Button label={"הקליקו כדי ליצור איתנו קשר"} direction="/contact" />
             </div>
         </div>
     );

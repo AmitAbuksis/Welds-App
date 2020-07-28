@@ -1,5 +1,5 @@
 import React from "react";
-import useStyle from "./ContactUsBtn.style";
+import useStyle from "./Button.style";
 
 import { Link } from "react-router-dom";
 

@@ -7,6 +7,7 @@ const HomePageStyle = makeStyles((theme) => {
             height: "100%",
             margin: "0",
             padding: "0",
+            textAlign: "center",
         },
         imgContainer: {
             display: "flex",
@@ -14,9 +15,14 @@ const HomePageStyle = makeStyles((theme) => {
             margin: "40px auto",
         },
         image: {
-            minWidth: "50%",
-            height: "260px",
+            minWidth: "70%",
+            height: "400px",
             margin: "12px 12px",
+            ["@media screen and (max-width: 600px)"]: {
+                width: "100%",
+                height: "100%",
+                margin: "0",
+            },
         },
         btnPosition: {
             display: "flex",
@@ -24,13 +30,16 @@ const HomePageStyle = makeStyles((theme) => {
         },
         ourAddress: {
             fontSize: "20px",
-            textAlign: "center",
             margin: "10px",
         },
         contactUsTxt: {
             fontWeight: "bold",
             color: "#656060",
             marginBottom: "10px",
+        },
+        textSection: {
+            textAlign: "center",
+            margin: "15px auto",
         },
     };
 });

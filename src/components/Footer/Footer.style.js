@@ -4,12 +4,16 @@ const FooterStyle = makeStyles((theme) => {
     return {
         footerContainer: {
             marginTop: "20px",
-            minWidth: "100%",
+            width: "100%",
             height: "180px",
             backgroundColor: "#333",
             color: "white",
             display: "flex",
             justifyContent: "space-between",
+            ["@media screen and (max-width: 600px)"]: {
+                widht: "100%",
+                height: "100%",
+            },
         },
         linksContainer: {
             ["@media screen and (min-width: 600px)"]: {
