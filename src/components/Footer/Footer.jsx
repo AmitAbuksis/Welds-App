@@ -3,8 +3,7 @@ import useStyle from "./Footer.style";
 
 import { useHistory } from "react-router-dom";
 
-import facebookIcon from "../../assets/images/facebook_icon.png";
-import instagramIcon from "../../assets/images/instagram_icon.jpg";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const Header = (props) => {
     const { redirectToSocialMedia } = props;
@@ -27,10 +26,14 @@ const Header = (props) => {
             </div>
             <div className={classes.socialMediaIconsContainer}>
                 <div onClick={() => redirectToSocialMedia("facebook")}>
-                    <img className={classes.socialMediaIcons} alt="facebook" src={facebookIcon} />
+                    <Tooltip title="facebook">
+                        <img className={classes.socialMediaIcons} alt="facebook" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" />
+                    </Tooltip>
                 </div>
                 <div onClick={() => redirectToSocialMedia("instagram")}>
-                    <img className={classes.socialMediaIcons} alt="instagram" src={instagramIcon} />
+                    <Tooltip title="instagram">
+                        <img className={classes.socialMediaIcons} alt="instagram" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" />
+                    </Tooltip>
                 </div>
             </div>
             <div className={classes.copyrights}>CopyRights by Amit Abuksis</div>

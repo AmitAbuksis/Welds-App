@@ -14,9 +14,9 @@ const Navigation = (props) => {
                 <NavLink to="/about" exact className={classes.navLink} activeStyle={{ backgroundColor: "#4CAF50", color: "white" }}>
                     אודותינו
                 </NavLink>
-                <NavLink to="/services" exact className={classes.navLink} activeStyle={{ backgroundColor: "#4CAF50", color: "white" }}>
+                {/* <NavLink to="/services" exact className={classes.navLink} activeStyle={{ backgroundColor: "#4CAF50", color: "white" }}>
                     שירותים
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/ourCustomers" exact className={classes.navLink} activeStyle={{ backgroundColor: "#4CAF50", color: "white" }}>
                     לקוחותינו
                 </NavLink>
