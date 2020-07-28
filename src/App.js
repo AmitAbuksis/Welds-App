@@ -1,4 +1,5 @@
 import React from "react";
+import useStyle from "./App.style";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "./pages/HomePage/HomePage";
@@ -14,6 +15,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+    const classes = useStyle();
     const redirectToSocialMedia = (variant) => {
         if (variant === "facebook") {
             return window.open("https://www.facebook.com/profile.php?id=1274526780");
@@ -37,6 +39,9 @@ function App() {
                     <Route path="/ourCustomers" component={OurCustomersPage} />
                     <Route component={ErrorPage} />
                 </Switch>
+                <div className={classes.whatsAppBox} onClick={() => window.open("https://wa.me/+972545512329")}>
+                    <img src="https://img.icons8.com/color/100/000000/whatsapp.png" alt="whastAppIcon" className={classes.whastAppIcon} />
+                </div>
                 <Footer redirectToSocialMedia={redirectToSocialMedia} />
             </div>
         </Router>
