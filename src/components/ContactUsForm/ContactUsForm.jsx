@@ -29,7 +29,7 @@ const ContactUsForm = (props) => {
     };
 
     return (
-        <div className={classes.formContainer}>
+        <div className={classes.contactUsFormContainer}>
             <Formik initialValues={initialFormValues} validationSchema={validationFormSchema} onSubmit={onSubmit}>
                 <Form>
                     <div className={classes.formControl}>

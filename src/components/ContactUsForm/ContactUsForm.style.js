@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const ContactUsFormStyle = makeStyles((theme) => {
     return {
-        formContainer: {
+        contactUsFormContainer: {
             width: "65%",
             backgroundColor: "#e0dfdf",
             padding: "20px",
@@ -25,6 +25,7 @@ const ContactUsFormStyle = makeStyles((theme) => {
             border: "none",
             borderRadius: "4px",
             cursor: "pointer",
+            fontSize: "15px",
             "&:hover": {
                 backgroundColor: "#45a049",
             },
