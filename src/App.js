@@ -18,6 +18,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 function App() {
     const classes = useStyle();
+
     const redirectToSocialMedia = (variant) => {
         if (variant === "facebook") {
             return window.open("https://www.facebook.com/profile.php?id=1274526780");
@@ -25,6 +26,11 @@ function App() {
             return window.open("https://www.instagram.com");
         }
     };
+
+    const submitForm = (values) => {
+        console.log(values);
+    };
+
     return (
         <Router>
             <div>
@@ -37,7 +43,7 @@ function App() {
                     <Route path="/about" component={AboutPage} />
                     {/* <Route path="/services" component={ServicesPage} /> */}
                     <Route path="/gallery" component={GalleryPage} />
-                    <Route path="/contact" component={ContactPage} />
+                    <Route path="/contact" component={() => <ContactPage onSubmitForm={submitForm} />} />
                     <Route path="/ourCustomers" component={OurCustomersPage} />
                     <Route component={ErrorPage} />
                 </Switch>
