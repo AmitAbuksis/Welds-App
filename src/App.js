@@ -13,21 +13,27 @@ import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+import EmailService from "./services/email.service";
+
+import { makeEmailBody } from "./global/utils/email.util";
+import { SocialMediaConsts, emailConsts, whastappConsts } from "./global/const";
+
 import Tooltip from "@material-ui/core/Tooltip";
 
 function App() {
     const classes = useStyle();
 
     const redirectToSocialMedia = (variant) => {
-        if (variant === "facebook") {
-            return window.open("https://www.facebook.com/profile.php?id=1274526780");
-        } else if (variant === "instagram") {
-            return window.open("https://www.instagram.com");
+        if (variant === SocialMediaConsts.FACEBOOK_VARIANT) {
+            return window.open(SocialMediaConsts.FACEBOOK_ADDRESS);
+        } else if (variant === SocialMediaConsts.INSTAGRAM_VARIANT) {
+            return window.open(SocialMediaConsts.INSTAGRAM_ADDRESS);
         }
     };
 
     const submitForm = (values) => {
-        console.log(values);
+        const body = makeEmailBody(values);
+        EmailService.sendEmail(emailConsts.EMAIL_ADDRESS, emailConsts.EMAIL_SUBJECT, body);
     };
 
     return (
@@ -46,8 +52,8 @@ function App() {
                     <Route component={ErrorPage} />
                 </Switch>
                 <Tooltip title="דבר איתנו בואצאפ.">
-                    <div className={classes.whatsAppBox} onClick={() => window.open("https://wa.me/+972545512329")}>
-                        <img src="https://img.icons8.com/color/100/000000/whatsapp.png" alt="whastAppIcon" className={classes.whastAppIcon} />
+                    <div className={classes.whatsAppBox} onClick={() => window.open(whastappConsts.WHATSAPP_URL)}>
+                        <img src={`${whastappConsts.WHATSAPP_ICON}`} alt="whastAppIcon" className={classes.whastAppIcon} />
                     </div>
                 </Tooltip>
                 <Footer redirectToSocialMedia={redirectToSocialMedia} />

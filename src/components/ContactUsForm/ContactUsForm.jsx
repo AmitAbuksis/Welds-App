@@ -16,7 +16,7 @@ const initialFormValues = {
 const validationFormSchema = Yup.object({
     name: Yup.string().required("שדה חובה").min(2, "שם אמור להכיל לפחות 2 אותיות"),
     email: Yup.string().email("כתובת שגויה").required("שדה חובה"),
-    phone: Yup.string().required("שדה חובה"),
+    phone: Yup.string().required("שדה חובה").matches("^[0-9]*$", "יש להכיל ספרות בלבד"),
     details: Yup.string().max(256, "פרטים יכולים להכיל עד 256 תווים בלבד"),
 });
 
