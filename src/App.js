@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-//import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import OurCustomersPage from "./pages/OurCustomersPage/OurCustomersPage";
@@ -41,7 +40,6 @@ function App() {
                 <Switch>
                     <Route path="/" component={HomePage} exact />
                     <Route path="/about" component={AboutPage} />
-                    {/* <Route path="/services" component={ServicesPage} /> */}
                     <Route path="/gallery" component={GalleryPage} />
                     <Route path="/contact" component={() => <ContactPage onSubmitForm={submitForm} />} />
                     <Route path="/ourCustomers" component={OurCustomersPage} />
