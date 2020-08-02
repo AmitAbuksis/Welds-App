@@ -4,7 +4,7 @@ const NavigationStyle = makeStyles((theme) => {
     return {
         navContainer: {
             width: "100%",
-            height: "35px",
+            height: "100%",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
