@@ -17,21 +17,15 @@ const GalleryPage = (props) => {
                 <Typography variant="h5">גלריית עבודות ריתוך</Typography>
             </div>
             <div className={classes.galleryImagesContainer}>
-                <div className={classes.galleryImagesRow}>
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                </div>
-                <div className={classes.galleryImagesRow}>
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                </div>
-                <div className={classes.galleryImagesRow}>
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                </div>
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
             </div>
             <div className={classes.contactUsBtn}>
                 <Button label={"צרו איתנו קשר"} direction={"/contact"} />

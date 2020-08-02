@@ -12,23 +12,36 @@ const GalleryPageStyle = makeStyles((theme) => {
             lineHeight: "80px",
         },
         galleryImagesContainer: {
-            margin: "80px",
-        },
-        galleryImagesRow: {
             display: "flex",
-            alignItems: "center",
+            flexDirection: "row",
+            flexWrap: "wrap",
             justifyContent: "center",
+            alignItems: "center",
+            margin: "40px",
         },
         image: {
-            width: "25%",
-            height: "auto",
-            margin: "10px",
+            padding: "0 20px 20px",
             transition: "1s",
             cursor: "pointer",
             "&:hover": {
                 transform: "scale(1.3)",
             },
         },
+        // galleryImagesRow: {
+        //     display: "flex",
+        //     alignItems: "center",
+        //     justifyContent: "center",
+        // },
+        // image: {
+        //     width: "25%",
+        //     height: "auto",
+        //     margin: "10px",
+        //     transition: "1s",
+        //     cursor: "pointer",
+        //     "&:hover": {
+        //         transform: "scale(1.3)",
+        //     },
+        // },
         contactUsBtn: {
             textAlign: "center",
             marginBottom: "50px",
