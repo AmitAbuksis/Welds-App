@@ -24,11 +24,6 @@ const Navigation = (props) => {
                     צור קשר
                 </NavLink>
             </div>
-            <div className={classes.burgers}>
-                <div className={classes.line1}></div>
-                <div className={classes.line2}></div>
-                <div className={classes.line3}></div>
-            </div>
         </div>
     );
 };

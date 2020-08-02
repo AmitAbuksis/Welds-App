@@ -16,7 +16,7 @@ const HeaderStyle = makeStyles((theme) => {
             width: "200px",
             height: "200px",
             marginLeft: "70px",
-            ["@media screen and (max-width: 500px)"]: {
+            ["@media screen and (max-width: 600px)"]: {
                 width: "50%",
                 height: "auto",
                 margin: "10px",
@@ -26,7 +26,7 @@ const HeaderStyle = makeStyles((theme) => {
             color: "#a2a2a2",
         },
         headerTxt: {
-            ["@media screen and (max-width: 500px)"]: {
+            ["@media screen and (max-width: 600px)"]: {
                 fontSize: "25px",
             },
         },
