@@ -11,20 +11,18 @@ const OurCustomersPageStyle = makeStyles((theme) => {
         },
         headerText: {
             margin: "15px",
-            lineHeight: "40px",
+            lineHeight: "30px",
         },
         ourCustomerImagesContainer: {
-            margin: "80px",
-        },
-        ourCustomersImagesRow: {
             display: "flex",
+            flexWrap: "wrap",
+            flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
+            margin: "40px",
         },
         image: {
-            width: "25%",
-            height: "auto",
-            margin: "10px",
+            padding: "0 20px 20px",
             transition: "1s",
             cursor: "pointer",
             "&:hover": {

@@ -11,9 +11,11 @@ const AboutPage = (props) => {
     const classes = useStyle();
     return (
         <div className={classes.aboutPageContainer}>
-            <Button label={"הקליקו כאן ליצירת קשר"} direction={"/contact"} />
-            <div className={classes.ourCustomersBtn}>
-                <Button label={"בין לקוחותינו"} direction={"/ourCustomers"} />
+            <div className={classes.btnGroup}>
+                <Button label={"הקליקו כאן ליצירת קשר"} direction={"/contact"} />
+                <div className={classes.ourCustomersBtn}>
+                    <Button label={"בין לקוחותינו"} direction={"/ourCustomers"} />
+                </div>
             </div>
             <Typography variant="h5">ריתוכי חוזה - ריתוכי אלומיניום ועוד</Typography>
             <div className={classes.sectionText}>

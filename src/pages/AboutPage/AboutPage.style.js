@@ -5,8 +5,11 @@ const AboutPageStyle = makeStyles((theme) => {
         aboutPageContainer: {
             width: "100%",
             height: "100%",
-            margin: "40px 20px",
+            margin: "4px auto",
             textAlign: "center",
+        },
+        btnGroup: {
+            margin: "40px auto",
         },
         ourCustomersBtn: {
             margin: "50px",

@@ -19,21 +19,15 @@ const OurCustomersPage = (props) => {
                 </p>
             </div>
             <div className={classes.ourCustomerImagesContainer}>
-                <div className={classes.ourCustomersImagesRow}>
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                </div>
-                <div className={classes.ourCustomersImagesRow}>
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                </div>
-                <div className={classes.ourCustomersImagesRow}>
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                    <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
-                </div>
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
+                <img src={exampleLogo} alt="exampleLogo" className={classes.image} />
             </div>
             <div className={classes.contactUsBtn}>
                 <Button label={"צרו איתנו קשר"} direction={"/contact"} />
