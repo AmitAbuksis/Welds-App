@@ -19,7 +19,8 @@ const HomePageStyle = makeStyles((theme) => {
             height: "400px",
             margin: "12px 12px",
             ["@media screen and (max-width: 500px)"]: {
-                height: "250px",
+                width: "100%",
+                height: "auto",
                 margin: "0",
             },
         },

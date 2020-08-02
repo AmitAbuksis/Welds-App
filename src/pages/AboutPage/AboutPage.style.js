@@ -21,9 +21,13 @@ const AboutPageStyle = makeStyles((theme) => {
             marginBottom: "20px",
         },
         images: {
-            width: "25%",
+            width: "50%",
             height: "auto",
             margin: "15px",
+            ["@media screen and (max-width: 850px)"]: {
+                width: "70%",
+                height: "auto",
+            },
         },
     };
 });
