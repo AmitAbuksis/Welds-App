@@ -4,15 +4,26 @@ const ContactPageStyle = makeStyles((theme) => {
     return {
         contactPageContainer: {
             marginTop: "50px",
+            ["@media screen and (max-width:800px)"]: {
+                display: "block",
+            },
         },
         detailsContainer: {
             padding: "0 20px 20px 20px",
+            ["@media screen and (max-width:800px)"]: {
+                maxWidth: "100%",
+                textAlign: "center",
+            },
         },
         formContainer: {
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
             borderRadius: "5px",
+            ["@media screen and (max-width:800px)"]: {
+                justifyContent: "center",
+                maxWidth: "100%",
+            },
         },
         detailsText: {
             margin: "10px",
