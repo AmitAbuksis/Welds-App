@@ -2,20 +2,15 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const NavigationStyle = makeStyles((theme) => {
     return {
-        navContainer: {
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
+        container: {
             backgroundColor: "#333",
-            paddingTop: "5px",
-            overflow: "hidden",
+            height: "54px",
         },
         navLink: {
+            display: "block",
             textDecoration: "none",
             listStyle: "none",
-            padding: "14px 16px",
+            padding: "1rem",
             fontSize: "17px",
             color: "white",
             textAlign: "center",
@@ -23,11 +18,9 @@ const NavigationStyle = makeStyles((theme) => {
                 backgroundColor: "#ddd",
                 color: "white",
             },
-        },
-        navItems: {
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
+            ["@media screen and (max-width:600px)"]: {
+                padding: ".5rem 1rem",
+            },
         },
     };
 });
