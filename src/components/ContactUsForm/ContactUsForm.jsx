@@ -43,7 +43,7 @@ const ContactUsForm = (props) => {
                         <label type="text" name="email">
                             דואר אלקטרוני
                         </label>
-                        <Field type="email" name="email" placeholder="your.name@gmail.com" className={classes.inputField} />
+                        <Field type="email" name="email" placeholder="your.email@gmail.com" className={classes.inputField} />
                         <ErrorMessage name="email" component={TextError} />
                     </div>
                     <div className={classes.formControl}>
