@@ -20,7 +20,7 @@ import { SocialMediaConsts, emailConsts, whastappConsts } from "./global/const";
 
 import Tooltip from "@material-ui/core/Tooltip";
 
-function App() {
+const App = () => {
     const classes = useStyle();
 
     const redirectToSocialMedia = (variant) => {
@@ -60,6 +60,6 @@ function App() {
             </div>
         </Router>
     );
-}
+};
 
 export default App;

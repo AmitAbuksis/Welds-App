@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useStyle from "./Navigation.style";
 import "./Navigation.css";
 
