@@ -14,6 +14,7 @@ const Navigation = (props) => {
     return (
         <div className={classes.container}>
             <nav className="navbar">
+                <div className="brand-title"> </div>
                 <a className="toggle-button" onClick={toggleClassActive}>
                     <span className="bar"></span>
                     <span className="bar"></span>

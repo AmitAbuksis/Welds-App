@@ -9,7 +9,7 @@
 
 .brand-title {
     font-size: 1.5rem;
-    margin: 0.5rem;
+    margin: 1.5rem; /*reduce it to 0.5 to insert title instead of empty line*/
 }
 
 .navbar-links {
