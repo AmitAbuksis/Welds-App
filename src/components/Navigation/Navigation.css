@@ -10,6 +10,7 @@
 .brand-title {
     font-size: 1.5rem;
     margin: 1.5rem; /*reduce it to 0.5 to insert title instead of empty line*/
+    display: none;
 }
 
 .navbar-links {
@@ -59,6 +60,10 @@
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .brand-title {
+        display: block;
     }
 
     .toggle-button {
