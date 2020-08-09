@@ -33,7 +33,7 @@ const App = () => {
 
     const submitForm = (values) => {
         const body = makeEmailBody(values);
-        EmailService.sendEmail(emailConsts.EMAIL_ADDRESS, emailConsts.EMAIL_SUBJECT, body);
+        EmailService.sendEmail(values.email, body);
     };
 
     return (

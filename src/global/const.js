@@ -6,8 +6,8 @@ export const SocialMediaConsts = {
 };
 
 export const emailConsts = {
-    EMAIL_ADDRESS: "Amitabuksis8@gmail.com",
-    EMAIL_SUBJECT: "test",
+    EMAIL_ADDRESS: "amitabuksis8@gmail.com",
+    EMAIL_SUBJECT: "הודעה חדשה מהאתר שלך",
 };
 
 export const whastappConsts = {

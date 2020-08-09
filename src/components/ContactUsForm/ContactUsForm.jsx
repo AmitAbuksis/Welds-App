@@ -30,7 +30,14 @@ const ContactUsForm = (props) => {
 
     return (
         <div className={classes.contactUsFormContainer}>
-            <Formik initialValues={initialFormValues} validationSchema={validationFormSchema} onSubmit={onSubmit}>
+            <Formik
+                initialValues={initialFormValues}
+                validationSchema={validationFormSchema}
+                onSubmit={(values, { resetForm }) => {
+                    onSubmit(values);
+                    resetForm({ values: initialFormValues });
+                }}
+            >
                 <Form>
                     <div className={classes.formControl}>
                         <label type="text" name="name">
