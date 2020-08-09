@@ -16,7 +16,7 @@ import Footer from "./components/Footer/Footer";
 import EmailService from "./services/email.service";
 
 import { makeEmailBody } from "./global/utils/email.util";
-import { SocialMediaConsts, emailConsts, whastappConsts } from "./global/const";
+import { SocialMediaConsts, emailConsts } from "./global/const";
 
 import Tooltip from "@material-ui/core/Tooltip";
 
@@ -25,9 +25,9 @@ const App = () => {
 
     const redirectToSocialMedia = (variant) => {
         if (variant === SocialMediaConsts.FACEBOOK_VARIANT) {
-            return window.open(SocialMediaConsts.FACEBOOK_ADDRESS);
+            return window.open(`${process.env.REACT_APP_FACEBOOK_ADDRESS}`);
         } else if (variant === SocialMediaConsts.INSTAGRAM_VARIANT) {
-            return window.open(SocialMediaConsts.INSTAGRAM_ADDRESS);
+            return window.open(`${process.env.REACT_APP_INSTAGRAM_ADDRESS}`);
         }
     };
 
@@ -52,8 +52,8 @@ const App = () => {
                     <Route component={ErrorPage} />
                 </Switch>
                 <Tooltip title="דבר איתנו בואצאפ.">
-                    <div className={classes.whatsAppBox} onClick={() => window.open(whastappConsts.WHATSAPP_URL)}>
-                        <img src={`${whastappConsts.WHATSAPP_ICON}`} alt="whastAppIcon" className={classes.whastAppIcon} />
+                    <div className={classes.whatsAppBox} onClick={() => window.open(`${process.env.REACT_APP_WHATSAPP_URL}`)}>
+                        <img src={`${process.env.REACT_APP_WHATSAPP_ICON}`} alt="whastAppIcon" className={classes.whastAppIcon} />
                     </div>
                 </Tooltip>
                 <Footer redirectToSocialMedia={redirectToSocialMedia} />
