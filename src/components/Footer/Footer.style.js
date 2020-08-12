@@ -10,12 +10,12 @@ const FooterStyle = makeStyles((theme) => {
             color: "white",
             display: "flex",
             justifyContent: "space-between",
-            ["@media screen and (max-width: 600px)"]: {
+            [theme.breakpoints.down("sm")]: {
                 height: "100%",
             },
         },
         linksContainer: {
-            ["@media screen and (min-width: 600px)"]: {
+            [theme.breakpoints.up("sm")]: {
                 paddingRight: "40px",
             },
         },
@@ -37,7 +37,7 @@ const FooterStyle = makeStyles((theme) => {
         socialMediaIconsContainer: {
             display: "flex",
             alignItems: "center",
-            ["@media screen and (max-width: 600px)"]: {
+            [theme.breakpoints.down("sm")]: {
                 flexDirection: "column",
             },
         },

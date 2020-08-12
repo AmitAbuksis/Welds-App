@@ -27,7 +27,7 @@ const AboutPageStyle = makeStyles((theme) => {
             width: "50%",
             height: "auto",
             margin: "15px",
-            ["@media screen and (max-width: 850px)"]: {
+            [theme.breakpoints.down("md")]: {
                 width: "70%",
                 height: "auto",
             },

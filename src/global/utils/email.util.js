@@ -1,5 +1,3 @@
-import React from "react";
-
 export const makeEmailBody = (values) => {
     const detailsLabel = values && values.details ? "פרטים:" + values.details : "";
     const emailBody = `

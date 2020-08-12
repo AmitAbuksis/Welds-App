@@ -15,11 +15,11 @@ const Navigation = (props) => {
         <div className={classes.container}>
             <nav className="navbar">
                 <div className="brand-title"> </div>
-                <a className="toggle-button" onClick={toggleClassActive}>
+                <span className="toggle-button" onClick={toggleClassActive}>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
-                </a>
+                </span>
                 <div className="navbar-links">
                     <ul>
                         <li onClick={toggleClassActive}>

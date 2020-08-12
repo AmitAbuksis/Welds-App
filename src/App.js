@@ -16,7 +16,7 @@ import Footer from "./components/Footer/Footer";
 import EmailService from "./services/email.service";
 
 import { makeEmailBody } from "./global/utils/email.util";
-import { SocialMediaConsts, emailConsts } from "./global/const";
+import { SocialMediaConsts } from "./global/const";
 
 import Tooltip from "@material-ui/core/Tooltip";
 

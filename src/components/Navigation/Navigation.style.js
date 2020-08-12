@@ -18,7 +18,7 @@ const NavigationStyle = makeStyles((theme) => {
                 backgroundColor: "#ddd",
                 color: "white",
             },
-            ["@media screen and (max-width:600px)"]: {
+            [theme.breakpoints.down("sm")]: {
                 padding: ".5rem 1rem",
             },
         },

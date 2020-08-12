@@ -4,13 +4,20 @@ const ContactPageStyle = makeStyles((theme) => {
     return {
         contactPageContainer: {
             marginTop: "50px",
-            ["@media screen and (max-width:800px)"]: {
+            // ["@media screen and (max-width:800px)"]: {
+            //     display: "block",
+            // },
+            [theme.breakpoints.down("md")]: {
                 display: "block",
             },
         },
         detailsContainer: {
             padding: "0 20px 20px 20px",
-            ["@media screen and (max-width:800px)"]: {
+            // ["@media screen and (max-width:800px)"]: {
+            //     maxWidth: "100%",
+            //     textAlign: "center",
+            // },
+            [theme.breakpoints.down("md")]: {
                 maxWidth: "100%",
                 textAlign: "center",
             },
@@ -20,7 +27,11 @@ const ContactPageStyle = makeStyles((theme) => {
             justifyContent: "flex-start",
             alignItems: "center",
             borderRadius: "5px",
-            ["@media screen and (max-width:800px)"]: {
+            // ["@media screen and (max-width:800px)"]: {
+            //     justifyContent: "center",
+            //     maxWidth: "100%",
+            // },
+            [theme.breakpoints.down("md")]: {
                 justifyContent: "center",
                 maxWidth: "100%",
             },
